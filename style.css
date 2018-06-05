@@ -1,0 +1,236 @@
+/***************
+LAYOUT
+**************/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body {
+    background-image: linear-gradient(rgba(62, 20, 20, 0.4), rgba(62, 20, 20, 0.4)), url(back.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: Lato;
+    font-weight: 300;
+    position: relative;
+    height: 100vh;
+    color: #555;
+}
+
+.wrapper {
+    width: 1000px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+h1 {
+    font-size:80px;
+    font-family: Lato;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+h1 span {
+    color: #EB4D4D;
+}
+/* 535 */
+.top {
+    background-color: #f4f4f4;
+    height: 600px;
+    padding: 40px;
+}
+
+.active {
+    background: #e61f1f;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
+    font-weight: 600;
+}
+/***************
+BUTTONS
+**************/
+button {
+    position: absolute;
+    padding: 5px 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    background: #EB4D4D;
+    border: none;
+    font-family: Lato;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 300;
+    border-radius: 5px;
+    transition: background 0.5s, box-shadow 0.5s, font-weight 0.1s;
+}
+
+button-active {
+    position: absolute;
+    padding: 5px 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    background: #e61f1f;
+    border: none;
+    font-family: Lato;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 5px;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
+    transition: background 1s, box-shadow 1s, font-weight 0.1s;
+}
+
+button:hover { font-weight: 600; }
+button:hover i { margin-right: 20px; }
+
+button:focus,
+textarea:focus{
+    outline: none;
+}
+
+i {
+    color: #fff;
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 32px;
+    line-height: 1;
+    vertical-align: text-top;
+    margin-top: -4px;
+    transition: margin 0.3s;
+}
+
+.btn-asc {
+    top: 245px;
+    transform: translate(10%);
+}
+
+.btn-dec {
+    top: 245px;
+    transform: translate(-110%);
+}
+
+.btn-sort {
+    top: 545px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.btn-sort:active {
+    transition-duration: 0s;
+    background: #e61f1f;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
+    font-weight: 600;
+}
+
+.input-search {
+    position: absolute;
+    left: 50%;
+    transform: translate(-45%);
+    color: #555;
+    font-size: 14px;
+    font-family: 'Lato';
+    text-align: center;
+    padding: 5px;
+    width: 200px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+}
+
+.input-search:focus {
+    outline: none;
+    border: solid 1px #bebebe;
+}
+
+.btn-search {
+    color: #555;
+    padding-left: 330px;
+    padding-top: 5px;
+    font-size: 26px;
+    transition: font-size 0.2s;
+}
+
+.btn-search:hover {
+    font-size: 30px;
+}
+
+.btn-search:active {
+    color: #000;
+    font-size: 32px;
+    transition: font-size 0s;
+}
+/***************
+MIDDLE
+**************/
+.list-input {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 315px;
+    color: #555;
+    font-size: 18px;
+    font-family: 'Lato';
+    text-align: center;
+    padding: 10px;
+    width: 700px;
+    height: 200px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    resize: none;
+}
+
+textarea:focus {
+    border: solid 1px #bebebe;
+}
+
+/***************
+BOTTOM
+**************/
+
+.passes-box {
+    display: block;
+    position: absolute;
+    background-color: #fff;
+    color: #555;
+    width: 100px;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 12px;
+    text-align: center;
+    border-radius: 5px;
+    top: 615px;
+}
+
+.passes-label {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: #555;
+}
+
+.passes-counter {
+    font-size: 30px;
+}

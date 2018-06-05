@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
+        <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+        <link type="text/css" rel="stylesheet" href="style.css">
+        
+        <title>Sorted.</title>
+    </head>
+
+    <body>
+        <div class="wrapper clearfix">
+            <h1>Sorted<span>.</span></h1>
+            <div class="top">
+                <div class="search">
+                    <i class="ion-ios-search btn-search" id="btn-search"></i>
+                    <input type="text" placeholder="Search" class="input-search">
+                </div>
+                <button class="btn-asc" id="btn-asc"><i class="ion-ios-arrow-up"></i>Ascending</button>
+                <button class="btn-dec" id="btn-dec"><i class="ion-ios-arrow-down"></i>Descending</button>
+                <div class="mid">
+                    <textarea class="list-input" placeholder="Input numbers" id="input"></textarea> 
+                </div>
+                <div class="btm">
+                    <button class="btn-sort" id="btn-sort"><i class="ion-ios-color-wand-outline"></i>Sort</button>
+                    <div class="passes-box">
+                        <div class="passes-label">Passes</div>
+                        <div class="passes-counter" id="counter">0</div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+        <script src="sorted.js"></script>
+    </body>
+</html>
